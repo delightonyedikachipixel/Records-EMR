@@ -1,0 +1,451 @@
+<mxfile host="Electron" agent="claude" pages="4">
+  <diagram id="Use_Case_Diagram" name="Use Case Diagram">
+    <mxGraphModel dx="1414" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actor_fd" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Front Desk Staff" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_dr" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Doctor / Nurse" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_ad" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Clinic Admin" vertex="1">
+          <mxGeometry height="60" width="30" x="40" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_login" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Login" vertex="1">
+          <mxGeometry height="60" width="180" x="340" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_register" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Register Patient" vertex="1">
+          <mxGeometry height="60" width="180" x="620" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_search" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Search Patient" vertex="1">
+          <mxGeometry height="60" width="180" x="340" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_schedule" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Schedule Appointment" vertex="1">
+          <mxGeometry height="60" width="180" x="620" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_logvisit" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Log Visit" vertex="1">
+          <mxGeometry height="60" width="180" x="340" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_history" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="View Medical History" vertex="1">
+          <mxGeometry height="60" width="180" x="620" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_prescribe" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Record Prescription" vertex="1">
+          <mxGeometry height="60" width="180" x="340" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_manageacc" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Manage User Accounts" vertex="1">
+          <mxGeometry height="60" width="180" x="620" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_reports" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="View Reports" vertex="1">
+          <mxGeometry height="60" width="180" x="620" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_0" edge="1" parent="1" source="actor_fd" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_1" edge="1" parent="1" source="actor_fd" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_register" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_2" edge="1" parent="1" source="actor_fd" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_search" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_3" edge="1" parent="1" source="actor_fd" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_schedule" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_4" edge="1" parent="1" source="actor_dr" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_5" edge="1" parent="1" source="actor_dr" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_search" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_6" edge="1" parent="1" source="actor_dr" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_logvisit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_7" edge="1" parent="1" source="actor_dr" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_history" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_8" edge="1" parent="1" source="actor_dr" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_prescribe" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_9" edge="1" parent="1" source="actor_ad" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_10" edge="1" parent="1" source="actor_ad" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_manageacc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edge_11" edge="1" parent="1" source="actor_ad" style="endArrow=none;html=1;strokeColor=#666666;" target="uc_reports" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Class_Diagram" name="Class Diagram">
+    <mxGraphModel dx="1414" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cls_patient" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="Patient" vertex="1">
+          <mxGeometry height="298" width="260" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ id: String" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ name: String" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ dateOfBirth: Date" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n6" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ gender: String" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ phone: String" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n8" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ address: String" vertex="1">
+          <mxGeometry height="26" width="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n9" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ bloodGroup: String" vertex="1">
+          <mxGeometry height="26" width="260" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="n10" parent="cls_patient" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rounded=0;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="n11" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ register()" vertex="1">
+          <mxGeometry height="26" width="260" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="n12" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ updateInfo()" vertex="1">
+          <mxGeometry height="26" width="260" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="n13" parent="cls_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ viewHistory()" vertex="1">
+          <mxGeometry height="26" width="260" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_visit" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="Visit" vertex="1">
+          <mxGeometry height="272" width="260" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n14" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ id: String" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n15" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ patientId: String" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n16" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ doctorId: String" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ date: Date" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n18" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ symptoms: String" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n19" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ diagnosis: String" vertex="1">
+          <mxGeometry height="26" width="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n20" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ notes: String" vertex="1">
+          <mxGeometry height="26" width="260" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="n21" parent="cls_visit" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rounded=0;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="212" as="geometry" />
+        </mxCell>
+        <mxCell id="n22" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ createVisit()" vertex="1">
+          <mxGeometry height="26" width="260" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="n23" parent="cls_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ addNotes()" vertex="1">
+          <mxGeometry height="26" width="260" y="246" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_prescription" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="Prescription" vertex="1">
+          <mxGeometry height="194" width="260" x="760" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n24" parent="cls_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ id: String" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n25" parent="cls_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ visitId: String" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n26" parent="cls_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ medicineName: String" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n27" parent="cls_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ dosage: String" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n28" parent="cls_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ duration: String" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n29" parent="cls_prescription" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rounded=0;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n30" parent="cls_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ addPrescription()" vertex="1">
+          <mxGeometry height="26" width="260" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_appointment" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="Appointment" vertex="1">
+          <mxGeometry height="220" width="260" x="400" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n31" parent="cls_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ id: String" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n32" parent="cls_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ patientId: String" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n33" parent="cls_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ doctorId: String" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n34" parent="cls_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ scheduledAt: DateTime" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n35" parent="cls_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ status: String" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n36" parent="cls_appointment" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rounded=0;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n37" parent="cls_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ bookAppointment()" vertex="1">
+          <mxGeometry height="26" width="260" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="n38" parent="cls_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ cancelAppointment()" vertex="1">
+          <mxGeometry height="26" width="260" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_user" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="220" width="260" x="40" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="n39" parent="cls_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ id: String" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n40" parent="cls_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ name: String" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n41" parent="cls_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ role: String" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n42" parent="cls_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ username: String" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n43" parent="cls_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="+ passwordHash: String" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n44" parent="cls_user" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rounded=0;" value="" vertex="1">
+          <mxGeometry height="8" width="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n45" parent="cls_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ login()" vertex="1">
+          <mxGeometry height="26" width="260" y="168" as="geometry" />
+        </mxCell>
+        <mxCell id="n46" parent="cls_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;fontStyle=2;" value="+ logout()" vertex="1">
+          <mxGeometry height="26" width="260" y="194" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_edge_0" edge="1" parent="1" source="cls_patient" style="endArrow=open;endFill=0;html=1;startArrow=none;fontSize=11;" target="cls_visit" value="1        has        0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_edge_1" edge="1" parent="1" source="cls_visit" style="endArrow=open;endFill=0;html=1;startArrow=none;fontSize=11;" target="cls_prescription" value="1     includes     0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_edge_2" edge="1" parent="1" source="cls_user" style="endArrow=open;endFill=0;html=1;startArrow=none;fontSize=11;" target="cls_visit" value="1     conducts     0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_edge_3" edge="1" parent="1" source="cls_patient" style="endArrow=open;endFill=0;html=1;startArrow=none;fontSize=11;" target="cls_appointment" value="1     books     0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cls_edge_4" edge="1" parent="1" source="cls_user" style="endArrow=open;endFill=0;html=1;startArrow=none;fontSize=11;" target="cls_appointment" value="1     assigned     0..*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="ERD" name="ERD">
+    <mxGraphModel dx="1414" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="er_patient" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="PATIENT" vertex="1">
+          <mxGeometry height="212" width="260" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n47" parent="er_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="PK  id" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n48" parent="er_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     name" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n49" parent="er_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     date_of_birth" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n50" parent="er_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     gender" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n51" parent="er_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     phone" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n52" parent="er_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     address" vertex="1">
+          <mxGeometry height="26" width="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n53" parent="er_patient" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     blood_group" vertex="1">
+          <mxGeometry height="26" width="260" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="er_visit" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="VISIT" vertex="1">
+          <mxGeometry height="212" width="260" x="400" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n54" parent="er_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="PK  id" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n55" parent="er_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="FK  patient_id" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n56" parent="er_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="FK  doctor_id" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n57" parent="er_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     date" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n58" parent="er_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     symptoms" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="n59" parent="er_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     diagnosis" vertex="1">
+          <mxGeometry height="26" width="260" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="n60" parent="er_visit" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     notes" vertex="1">
+          <mxGeometry height="26" width="260" y="186" as="geometry" />
+        </mxCell>
+        <mxCell id="er_prescription" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="PRESCRIPTION" vertex="1">
+          <mxGeometry height="160" width="260" x="760" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="n61" parent="er_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="PK  id" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n62" parent="er_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="FK  visit_id" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n63" parent="er_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     medicine_name" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n64" parent="er_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     dosage" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n65" parent="er_prescription" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     duration" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="er_user" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="USER" vertex="1">
+          <mxGeometry height="160" width="260" x="40" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="n66" parent="er_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="PK  id" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n67" parent="er_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     name" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n68" parent="er_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     role" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n69" parent="er_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     username" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n70" parent="er_user" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     password_hash" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="er_appointment" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=0;whiteSpace=wrap;html=1;" value="APPOINTMENT" vertex="1">
+          <mxGeometry height="160" width="260" x="400" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="n71" parent="er_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="PK  id" vertex="1">
+          <mxGeometry height="26" width="260" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="n72" parent="er_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="FK  patient_id" vertex="1">
+          <mxGeometry height="26" width="260" y="56" as="geometry" />
+        </mxCell>
+        <mxCell id="n73" parent="er_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="FK  doctor_id" vertex="1">
+          <mxGeometry height="26" width="260" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="n74" parent="er_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     scheduled_at" vertex="1">
+          <mxGeometry height="26" width="260" y="108" as="geometry" />
+        </mxCell>
+        <mxCell id="n75" parent="er_appointment" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=6;spacingRight=4;overflow=hidden;fontSize=12;" value="     status" vertex="1">
+          <mxGeometry height="26" width="260" y="134" as="geometry" />
+        </mxCell>
+        <mxCell id="er_edge_0" edge="1" parent="1" source="er_patient" style="edgeStyle=entityRelationEdgeStyle;fontSize=11;html=1;endArrow=ERmany;startArrow=ERone;rounded=0;" target="er_visit" value="has">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er_edge_1" edge="1" parent="1" source="er_visit" style="edgeStyle=entityRelationEdgeStyle;fontSize=11;html=1;endArrow=ERmany;startArrow=ERone;rounded=0;" target="er_prescription" value="includes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er_edge_2" edge="1" parent="1" source="er_user" style="edgeStyle=entityRelationEdgeStyle;fontSize=11;html=1;endArrow=ERmany;startArrow=ERone;rounded=0;" target="er_visit" value="conducts">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er_edge_3" edge="1" parent="1" source="er_patient" style="edgeStyle=entityRelationEdgeStyle;fontSize=11;html=1;endArrow=ERmany;startArrow=ERone;rounded=0;" target="er_appointment" value="books">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="er_edge_4" edge="1" parent="1" source="er_user" style="edgeStyle=entityRelationEdgeStyle;fontSize=11;html=1;endArrow=ERmany;startArrow=ERone;rounded=0;" target="er_appointment" value="assigned_to">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="Activity_Diagram" name="Activity Diagram">
+    <mxGraphModel dx="1664" dy="988" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="act_start" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;fontColor=#ffffff;" value="Start" vertex="1">
+          <mxGeometry height="40" width="80" x="380" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="act_search" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Front desk searches for patient" vertex="1">
+          <mxGeometry height="60" width="240" x="300" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="act_decision" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="Patient found?" vertex="1">
+          <mxGeometry height="90" width="140" x="350" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="act_register" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Register new patient" vertex="1">
+          <mxGeometry height="60" width="200" x="60" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="act_schedule" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Confirm / schedule appointment" vertex="1">
+          <mxGeometry height="60" width="240" x="300" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="act_login" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Doctor logs in &amp; opens record" vertex="1">
+          <mxGeometry height="60" width="240" x="300" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="act_history" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Reviews medical history" vertex="1">
+          <mxGeometry height="60" width="240" x="300" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="act_diagnosis" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Records symptoms &amp; diagnosis" vertex="1">
+          <mxGeometry height="60" width="240" x="300" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="act_prescribe" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="Prescribes medication" vertex="1">
+          <mxGeometry height="60" width="240" x="300" y="740" as="geometry" />
+        </mxCell>
+        <mxCell id="act_save" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="System saves visit record" vertex="1">
+          <mxGeometry height="60" width="240" x="300" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="act_end" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#000000;strokeColor=#000000;fontColor=#ffffff;" value="End" vertex="1">
+          <mxGeometry height="40" width="80" x="380" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_0" edge="1" parent="1" source="act_start" style="endArrow=block;html=1;" target="act_search" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_1" edge="1" parent="1" source="act_search" style="endArrow=block;html=1;" target="act_decision" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_2" edge="1" parent="1" source="act_decision" style="endArrow=block;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="act_register" value="No">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_3" edge="1" parent="1" source="act_decision" style="endArrow=block;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="act_schedule" value="Yes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_4" edge="1" parent="1" source="act_register" style="endArrow=block;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act_schedule" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_5" edge="1" parent="1" source="act_schedule" style="endArrow=block;html=1;" target="act_login" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_6" edge="1" parent="1" source="act_login" style="endArrow=block;html=1;" target="act_history" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_7" edge="1" parent="1" source="act_history" style="endArrow=block;html=1;" target="act_diagnosis" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_8" edge="1" parent="1" source="act_diagnosis" style="endArrow=block;html=1;" target="act_prescribe" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_9" edge="1" parent="1" source="act_prescribe" style="endArrow=block;html=1;" target="act_save" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="act_edge_10" edge="1" parent="1" source="act_save" style="endArrow=block;html=1;" target="act_end" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
