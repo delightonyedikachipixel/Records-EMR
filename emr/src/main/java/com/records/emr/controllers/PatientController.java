@@ -20,7 +20,7 @@ public class PatientController {
     private final PatientService patientService;
 
     @PreAuthorize("hasAnyRole('FRONT_DESK', 'ADMIN')")
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity<PatientResponse> register(@Valid @RequestBody PatientRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(patientService.register(request));
     }

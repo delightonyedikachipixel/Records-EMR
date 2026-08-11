@@ -20,7 +20,7 @@ public class StaffController {
     private final StaffService staffService;
 
     @PreAuthorize("hasRole('ADMIN')")
-    @PostMapping
+    @PostMapping("/create/staff")
     public ResponseEntity<StaffResponse> register(@Valid @RequestBody StaffRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(staffService.register(request));
     }

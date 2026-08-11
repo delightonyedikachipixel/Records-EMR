@@ -22,10 +22,10 @@ public class DataSeeder implements CommandLineRunner {
                     .name("Default Admin")
                     .role(Role.ADMIN)
                     .username("admin")
-                    .passwordHash(passwordEncoder.encode("ChangeMe123!"))
+                    .passwordHash(passwordEncoder.encode("12345678"))
                     .build();
             staffRepository.save(admin);
-            System.out.println("Seeded default admin -> username: admin | password: ChangeMe123!  (change this immediately)");
+            System.out.println("Seeded default admin -> username: admin | password: 12345678  (change this immediately)");
         }
     }
 }

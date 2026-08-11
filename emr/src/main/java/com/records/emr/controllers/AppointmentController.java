@@ -20,7 +20,7 @@ public class AppointmentController {
     private final AppointmentService appointmentService;
 
     @PreAuthorize("hasAnyRole('FRONT_DESK', 'DOCTOR')")
-    @PostMapping
+    @PostMapping("/schedule")
     public ResponseEntity<AppointmentResponse> schedule(@Valid @RequestBody AppointmentRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(appointmentService.schedule(request));
     }

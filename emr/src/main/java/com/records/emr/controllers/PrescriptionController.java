@@ -20,7 +20,7 @@ public class PrescriptionController {
     private final PrescriptionService prescriptionService;
 
     @PreAuthorize("hasRole('DOCTOR')")
-    @PostMapping
+    @PostMapping("/dosage")
     public ResponseEntity<PrescriptionResponse> add(@Valid @RequestBody PrescriptionRequest request) {
         return ResponseEntity.status(HttpStatus.CREATED).body(prescriptionService.addPrescription(request));
     }
