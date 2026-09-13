@@ -3,6 +3,7 @@ package com.records.emr.controllers;
 import com.records.emr.dtos.requests.AppointmentRequest;
 import com.records.emr.dtos.responses.AppointmentResponse;
 import com.records.emr.services.AppointmentService;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -15,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/appointments")
 @RequiredArgsConstructor
+@Tag(name = "Appointment Controller", description = "This API for Hospital Appointments and Requests")
 public class AppointmentController {
 
     private final AppointmentService appointmentService;

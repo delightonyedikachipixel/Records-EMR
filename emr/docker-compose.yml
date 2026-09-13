@@ -27,7 +27,7 @@ services:
       - NAME=EMR
       - JWT_SECRET=${JWT_SECRET}
       - JWT_EXPIRATION=${JWT_EXPIRATION}
-      - SPRING_DATA_MONGODB_URI=mongodb://mongodb:27017/emr
+      - SPRING_DATA_MONGODB_URI=${MONGODB_SRV}
       - SPRING_DOCKER_COMPOSE_ENABLED=false
     depends_on:
       mongodb:
